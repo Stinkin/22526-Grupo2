@@ -12,7 +12,11 @@ margin-top: 20px;
 }
 
 .pie{
-
+    width: auto;
+    height: 50px;
+    padding-top: 20px;
+    background: linear-gradient(rgba(15, 96, 201, 0.71), rgba(63, 183, 3, 0.698));
+    text-align: center;
 }
 
 .btn-volver{
