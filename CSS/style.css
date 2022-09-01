@@ -48,7 +48,7 @@ margin-top: 20px;
     color: orange;
     text-decoration: none;
     display: block;
-    padding: 12px 150px;
+    padding: 12px 40px;
     font-size: 20px;
 }
 
@@ -57,3 +57,64 @@ margin-top: 20px;
     width: fit-content;
     height: 50px;
 }
+
+
+/* Links Sociales */
+/* Podemos hacer un color para cada subclase de link social */ 
+a.socialFB:link, a.socialFB:visited {
+    color: black;
+    font-size: 48px;
+  }
+  
+a.socialFB:hover, a.socialFB:active {
+    color: navy;
+    font-size: 48px;
+  }
+
+a.socialWA:link, a.socialWA:visited {
+    color: black;
+    font-size: 48px;
+  }
+a.socialWA:hover, a.socialWA:active {
+    color: green;
+    font-size: 48px;
+  }
+
+a.socialIG:link, a.socialIG:visited {
+    color: black;
+    font-size: 48px;
+  }
+a.socialIG:hover, a.socialIG:active {
+    color: orange;
+    font-size: 48px;
+  }
+
+a.socialTT:link, a.socialTT:visited {
+    color: black;
+    font-size: 48px;
+  }
+a.socialTT:hover, a.socialTT:active {
+    color: magenta;
+    font-size: 48px;
+  }
+
+/* Fin de Links Sociales */ 
+
+/* Imagen de la pagina landing */
+#cf {
+    position:relative;
+    height: 400px;
+    width: 520px;
+    margin:0 auto;
+  }
+  
+#cf img {
+    position:absolute;
+    left:0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+#cf img.top:hover {
+    opacity:0;
+  }
+/* Fin pagina Landing */ 
