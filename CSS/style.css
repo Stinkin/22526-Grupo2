@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.encabezado {
+text-align: center;
+text-decoration: underline;
+margin-top: 20px;
+}
+
+.pie{
+
+}
+
+.btn-volver{
+    position: fixed;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 0;
+    line-height: 55px;
+    bottom: 20px;
+    right: 30px;
+    background-color: #008CBA;
+    border-radius: 8px;
+    color: white;
+    text-align: center;
+
+}
+#menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu a{
+    color: orange;
+    text-decoration: none;
+    display: block;
+    padding: 12px 150px;
+    font-size: 20px;
+}
+
+#menu{
+    background-color: #008CBA;
+    width: fit-content;
+    height: 50px;
+}
