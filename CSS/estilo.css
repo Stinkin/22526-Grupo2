@@ -1,0 +1,55 @@
+.encabezado {
+    height: 50px;
+    width: 95%;
+    border: 3px black solid;
+    background-color: white;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.pie {
+    height: 50px;
+    width: 95%;
+    border: 3px black solid;
+    background-color: white;
+    text-align: center;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 36px;
+}
+
+.cuerpo {
+    font-size: 48px;
+    padding: 10px;
+}
+
+a.social:link, a.social:visited {
+    color: black;
+    font-size: 48px;
+  }
+  
+a.social:hover, a.social:active {
+    color: navy;
+    font-size: 48px;
+  }
+  
+
+
+#cf {
+    position:relative;
+    height: 400px;
+    width: 520px;
+    margin:0 auto;
+  }
+  
+#cf img {
+    position:absolute;
+    left:0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+#cf img.top:hover {
+    opacity:0;
+  }
