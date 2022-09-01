@@ -4,10 +4,11 @@
     border: 3px black solid;
     background-color: white;
     text-align: center;
-    padding: 6px;
     text-decoration: none;
     font-size: 36px;
-}
+    padding: 6px;
+    margin: 5px;
+  }
 
 .pie {
     height: 50px;
@@ -15,28 +16,63 @@
     border: 3px black solid;
     background-color: white;
     text-align: center;
-    padding: 6px;
     text-decoration: none;
     font-size: 36px;
+    padding: 6px;
+    margin: 5px;
 }
 
 .cuerpo {
+    width: 95%;
+    border: 3px black solid;
+    background-color: coral;
     font-size: 48px;
-    padding: 10px;
+    padding: 6px;
+    margin: 5px;
 }
 
-a.social:link, a.social:visited {
+/* Links Sociales */
+/* Podemos hacer un color para cada subclase de link social */ 
+a.socialFB:link, a.socialFB:visited {
     color: black;
     font-size: 48px;
   }
   
-a.social:hover, a.social:active {
+a.socialFB:hover, a.socialFB:active {
     color: navy;
     font-size: 48px;
   }
-  
 
+a.socialWA:link, a.socialWA:visited {
+    color: black;
+    font-size: 48px;
+  }
+a.socialWA:hover, a.socialWA:active {
+    color: green;
+    font-size: 48px;
+  }
 
+a.socialIG:link, a.socialIG:visited {
+    color: black;
+    font-size: 48px;
+  }
+a.socialIG:hover, a.socialIG:active {
+    color: orange;
+    font-size: 48px;
+  }
+
+a.socialTT:link, a.socialTT:visited {
+    color: black;
+    font-size: 48px;
+  }
+a.socialTT:hover, a.socialTT:active {
+    color: magenta;
+    font-size: 48px;
+  }
+
+/* Fin de Links Sociales */ 
+
+/* Imagen de la pagina landing */
 #cf {
     position:relative;
     height: 400px;
@@ -47,9 +83,10 @@ a.social:hover, a.social:active {
 #cf img {
     position:absolute;
     left:0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 2s ease-in-out;
   }
   
 #cf img.top:hover {
     opacity:0;
   }
+/* Fin pagina Landing */ 
