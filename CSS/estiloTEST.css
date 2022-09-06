@@ -1,0 +1,14 @@
+#menu li a:hover {
+  background-color: black;
+}
+
+.encabezado {
+  height: auto;
+}
+
+#menu {
+  width: 95%;
+  display: inline-block;
+  height:auto;
+}
+

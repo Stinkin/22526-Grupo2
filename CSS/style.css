@@ -1,120 +1,129 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+div {
+  height: auto;
+}
 
 .encabezado {
-text-align: center;
-text-decoration: underline;
-margin-top: 20px;
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 20px;
 }
 
-.pie{
-    width: auto;
-    height: 50px;
-    padding-top: 20px;
-    background: linear-gradient(rgba(15, 96, 201, 0.71), rgba(63, 183, 3, 0.698));
-    text-align: center;
+.pie {
+  width: auto;
+  height: 50px;
+  padding-top: 20px;
+  background: linear-gradient(rgba(15, 96, 201, 0.71), rgba(63, 183, 3, 0.698));
+  text-align: center;
 }
 
-.btn-volver{
-    position: fixed;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 0;
-    line-height: 55px;
-    bottom: 20px;
-    right: 30px;
-    background-color: #008CBA;
-    border-radius: 8px;
-    color: white;
-    text-align: center;
-
+.btn-volver {
+  position: fixed;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 0;
+  line-height: 55px;
+  bottom: 20px;
+  right: 30px;
+  background-color: #008cba;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
 }
-#menu ul{
-    list-style: none;
-    margin: 0;
-    padding: 0;
+#menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 #menu li {
-    float: left;
+  float: left;
 }
 
-#menu a{
-    color: orange;
-    text-decoration: none;
-    display: block;
-    padding: 12px 40px;
-    font-size: 20px;
+#menu a {
+  color: orange;
+  text-decoration: none;
+  display: block;
+  padding: 12px 40px;
+  font-size: 20px;
 }
 
-#menu{
-    background-color: #008CBA;
-    width: fit-content;
-    height: 50px;
+#menu {
+  background-color: #008cba;
+  width: fit-content;
+  height: 50px;
 }
-
 
 /* Links Sociales */
-/* Podemos hacer un color para cada subclase de link social */ 
-a.socialFB:link, a.socialFB:visited {
-    color: black;
-    font-size: 48px;
-  }
-  
-a.socialFB:hover, a.socialFB:active {
-    color: navy;
-    font-size: 48px;
-  }
+/* Podemos hacer un color para cada subclase de link social */
+a.socialFB:link,
+a.socialFB:visited {
+  color: black;
+  font-size: 48px;
+}
 
-a.socialWA:link, a.socialWA:visited {
-    color: black;
-    font-size: 48px;
-  }
-a.socialWA:hover, a.socialWA:active {
-    color: green;
-    font-size: 48px;
-  }
+a.socialFB:hover,
+a.socialFB:active {
+  color: navy;
+  font-size: 48px;
+}
 
-a.socialIG:link, a.socialIG:visited {
-    color: black;
-    font-size: 48px;
-  }
-a.socialIG:hover, a.socialIG:active {
-    color: orange;
-    font-size: 48px;
-  }
+a.socialWA:link,
+a.socialWA:visited {
+  color: black;
+  font-size: 48px;
+}
+a.socialWA:hover,
+a.socialWA:active {
+  color: green;
+  font-size: 48px;
+}
 
-a.socialTT:link, a.socialTT:visited {
-    color: black;
-    font-size: 48px;
-  }
-a.socialTT:hover, a.socialTT:active {
-    color: magenta;
-    font-size: 48px;
-  }
+a.socialIG:link,
+a.socialIG:visited {
+  color: black;
+  font-size: 48px;
+}
+a.socialIG:hover,
+a.socialIG:active {
+  color: orange;
+  font-size: 48px;
+}
 
-/* Fin de Links Sociales */ 
+a.socialTT:link,
+a.socialTT:visited {
+  color: black;
+  font-size: 48px;
+}
+a.socialTT:hover,
+a.socialTT:active {
+  color: magenta;
+  font-size: 48px;
+}
+
+/* Fin de Links Sociales */
 
 /* Imagen de la pagina landing */
 #cf {
-    position:relative;
-    height: 400px;
-    width: 520px;
-    margin:0 auto;
-  }
-  
+  position: relative;
+  height: 400px;
+  width: 520px;
+  margin: 0 auto;
+}
+
 #cf img {
-    position:absolute;
-    left:0;
-    transition: opacity 2s ease-in-out;
-  }
-  
+  position: absolute;
+  left: 0;
+  transition: opacity 2s ease-in-out;
+}
+
 #cf img.top:hover {
-    opacity:0;
-  }
-/* Fin pagina Landing */ 
+  opacity: 0;
+}
+/* Fin pagina Landing */
