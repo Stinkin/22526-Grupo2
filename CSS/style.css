@@ -1,129 +1,196 @@
+/* Estilos de identidad de la pagina se pueden usar desde cualquier tag */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+
+  --color-link: greenyellow; /* testing */
+  --color-link-social: black;
+  
+  --color-menu-sombra: rgba(0, 0, 255, 0.5);
+  --color-menu-fondo: black;
+  --color-menu-texto: white;
+  --color-menu-activo: blue;
+
+  --color-texto: black;
+  --color-fondo: white;
+  --color-borde: black;
+
+  --color-letra-inicial: blue;
+  
+  --color-fondo-1 : grey; /*testing */
+  --color-fondo-2 : pink; /*testing */
+  --color-borde-1 : orange; /* testing */
+  --color-borde-2 : yellow; /* testing */
+}
+
+html {
+  font-size: 16px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; Posiblemente pise la letra elegida */
+  font-family: 'Roboto', sans-serif;
 }
 
-div {
+h1 {
+  display: inline;
+  font-size: 3em;
+}
+
+p {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.langImg {
+  max-width: min(600px,100%);
   height: auto;
 }
 
-.encabezado {
-  text-align: center;
-  text-decoration: underline;
-  margin-top: 20px;
+p::first-letter {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: var(--color-letra-inicial);
 }
 
-.pie {
-  width: auto;
-  height: 50px;
-  padding-top: 20px;
-  background: linear-gradient(rgba(15, 96, 201, 0.71), rgba(63, 183, 3, 0.698));
-  text-align: center;
+.formulario {
+  display: inline-block;
+  padding: 15px;
+  line-height: 30px;
+  border: 2px dashed var(--color-borde);
 }
 
-.btn-volver {
-  position: fixed;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0;
-  line-height: 55px;
-  bottom: 20px;
-  right: 30px;
-  background-color: #008cba;
-  border-radius: 8px;
-  color: white;
+.centrado {
   text-align: center;
 }
-#menu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
+/* Para resaltar visual, si un link esta mal, lo vamos a ver */
+a:link,
+a:visited {
+  color: var(--color-link);
 }
 
-#menu li {
-  float: left;
-}
-
-#menu a {
-  color: orange;
-  text-decoration: none;
-  display: block;
-  padding: 12px 40px;
-  font-size: 20px;
-}
-
-#menu {
-  background-color: #008cba;
-  width: fit-content;
-  height: 50px;
+.inline {
+  display: inline-block;
+  text-align: left;
 }
 
 /* Links Sociales */
 /* Podemos hacer un color para cada subclase de link social */
-a.socialFB:link,
-a.socialFB:visited {
-  color: black;
-  font-size: 48px;
+/* No van a ser por variables ya que son identidad del social, no nuestras */
+
+.social {
+  font-size: 3em;
 }
 
-a.socialFB:hover,
-a.socialFB:active {
-  color: navy;
-  font-size: 48px;
+a.FB:hover,
+a.FB:active {
+  color: blue;
 }
 
-a.socialWA:link,
-a.socialWA:visited {
-  color: black;
-  font-size: 48px;
-}
-a.socialWA:hover,
-a.socialWA:active {
-  color: green;
-  font-size: 48px;
+a.WA:hover,
+a.WA:active {
+  color: lime;
 }
 
-a.socialIG:link,
-a.socialIG:visited {
-  color: black;
-  font-size: 48px;
-}
-a.socialIG:hover,
-a.socialIG:active {
+a.IG:hover,
+a.IG:active {
   color: orange;
-  font-size: 48px;
 }
 
-a.socialTT:link,
-a.socialTT:visited {
-  color: black;
-  font-size: 48px;
-}
-a.socialTT:hover,
-a.socialTT:active {
+a.TT:hover,
+a.TT:active {
   color: magenta;
-  font-size: 48px;
+}
+
+.social:link,
+.social:visited {
+  color: var(--color-link-social);
 }
 
 /* Fin de Links Sociales */
 
-/* Imagen de la pagina landing */
-#cf {
-  position: relative;
-  height: 400px;
-  width: 520px;
-  margin: 0 auto;
+/* Estilos para hacer uso de FleX. Diseño estructural del sitio*/
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+
+  /* min-height: 600px; */
 }
 
-#cf img {
-  position: absolute;
-  left: 0;
-  transition: opacity 2s ease-in-out;
+.col {
+  border: 5px solid var(--color-borde-1);
+  background-color: var(--color-fondo-2);
+  padding: 5px;
+  text-align: center;
+  flex: 1;
 }
 
-#cf img.top:hover {
-  opacity: 0;
+.colAncha {
+  border: 5px solid var(--color-borde-2);
+  background-color: var(--color-fondo-1);
+  padding: 10px;
+  text-align: center;
+  flex: 12;
 }
-/* Fin pagina Landing */
+
+/* Estilos para header y footer */
+.header,
+.footer {
+  background-color: var(--color-fondo-11);
+  overflow: auto;
+  text-align: center;
+  width: 100%;
+}
+
+.header > div,
+.footer > div {
+  margin: 0px;
+  padding: 5px;
+}
+
+/* Estilos para index */
+.index-main {
+  display: flex;
+  flex-direction: column;
+}
+
+.index-top {
+  border: 5px solid var(--color-borde-2);
+  background-color: var(--color-fondo-1);
+  padding: 0px;
+  text-align: center;
+  flex: 2;
+  display:block;
+}
+
+.index-bottom{
+  border: 5px solid var(--color-borde-2);
+  background-color: var(--color-fondo-1);
+  padding: 10px;
+  text-align: center;
+  flex: 1;
+  display:block;
+}
+
+/* La animacion */
+
+#animacion {
+  margin:0 auto;
+  height:200px;
+  width:260px; 
+  transition: background-image 3s ease-in-out;
+  background-image:url("/img/f_ada.jpg");
+  background-size: cover;
+}
+
+#animacion:hover {
+  background-image:url("/img/f_linus.jpg");
+}

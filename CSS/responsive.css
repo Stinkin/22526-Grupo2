@@ -14,7 +14,7 @@
     font-size: 16px;
   }
   body {
-    background-color: lightcoral; /*testing */
+    background-color: red; /*testing */
   }
 }
 
@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 320px) {
   html {
-    font-size: 20px;
+    font-size: 10px;
   }
   body {
     background-color: lightgreen; /*testing */
@@ -51,6 +51,9 @@
     flex: 100%;
   }
 
+  .col {
+    display:none;
+  }
   .colAncha {
     order: -1;
   }
