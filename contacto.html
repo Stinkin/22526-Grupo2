@@ -2,6 +2,9 @@
 <html lang="en">
 
 <head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 
@@ -36,43 +39,67 @@
                 <a href="#">link de prueba</a>
             </div>
             <div class="colAncha">
-                <section id="formulario">
-                    <H2>Formulario de Contacto</H2>
-                    <p> </p>
-                    <p></p>
-                    <form action="show_data.html" target="_blank" class="inline">
-                        <div class="formulario">
-                            <table>
-                                <tr>
-                                    <td><label for="apellido">Apellido:</label></td>
-                                    <td><input type="text" name="apellido" id="apellido"
-                                            placeholder="Ingrese su apellido"><br></td>
-                                </tr>
-                                <tr>
-                                    <td> <label for="nombre">Nombre:</label></td>
-                                    <td> <input type="text" name="nombre" id="nombre"
-                                            placeholder="Ingrese su nombre"><br></td>
-                                </tr>
-                                <tr>
-                                    <td> <label for="direccion">Direccion:</label></td>
-                                    <td><input type="text" name="direccion" id="apellido"
-                                            placeholder="Ingrese su direccion"><br></td>
-                                </tr>
-                                <tr>
-                                    <td><label for="ciudad">Ciudad:</label></td>
-                                    <td><input type="text" name="cudad" id="apellido"
-                                            placeholder="Ingrese su ciudad"><br></td>
-                                </tr>
-                            </table>
-                            <class="der">Genero</class>
-                                <input type="radio" name="gender" value="hombre" checked> Masculino
-                                <input type="radio" name="gender" value="mujer"> Femenino
-                                <input type="radio" name="gender" value="otro"> Otro
-                                <br>
-
-                                <input type="submit" value="Enviar"> <input type="reset" value="Borrar"></p>
-                        </div>
-                    </form>
+                <section id="form_Contacto">
+                    <main class="mainForm">
+                        <form action="" class="formulario" id="formulario">
+                            <!-- campo nombre -->
+                
+                            <div class="formulario__grupo" id="grupo__nombre">
+                                <label for="nombre" class="formulario__label">Nombre</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese nombre">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <a class="formulario__input-error">El nombre tiene que tener mas de 4 letras</a>
+                            </div>
+                            <!-- campo apellido -->
+                            <div class="formulario__grupo" id="grupo__apellido">
+                                <label for="apellido" class="formulario__label">Apellido</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="apellido" id="apellido"
+                                        placeholder="Ingrese apellido">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <a class="formulario__input-error">El apellido tiene que tener mas de 4 letras</a>
+                            </div>
+                            <!-- campo email -->
+                            <div class="formulario__grupo" id="grupo__email">
+                                <label for="email" class="formulario__label">E mail</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="email" class="formulario__input" name="email" id="email" placeholder="Ingrese email">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <a class="formulario__input-error">El email tiene que tener mas de 4 letras</a>
+                            </div>
+                            <!-- campo telefono -->
+                            <div class="formulario__grupo" id="grupo__telefono">
+                                <label for="telefono" class="formulario__label">Telefono</label>
+                                <div class="formulario__grupo-input">
+                                    <input type="text" class="formulario__input" name="telefono" id="telefono"
+                                        placeholder="Ingrese telefono">
+                                    <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                                </div>
+                                <a class="formulario__input-error">El telefono tiene que tener mas de 4 letras</a>
+                            </div>
+                            <!-- Autorizar comunicacion -->
+                            <div class="formulario-grupo formulario__grupo-terminos" id="grupo__terminos">
+                                <label class="formulario__label">
+                                    <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                                    Acepto los Terminos y Condiciones de esta pagina y quiero ser contactado
+                                </label>
+                            </div>
+                            <div class="formulario__grupo formulario__grupo-btn-enviar">
+                                <button type="submit" class="formulario__btn"> Enviar</button>
+                                <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Todo correcto</p>
+                            </div>
+                            <div class="formulario__mensaje" id="formulario__mensaje">
+                                <p>
+                                    <i class="fas fa-exclamation-triangle"></i><b>Error: </b>Llenar el formulario por completo por
+                                    favor, sino no se puede
+                                </p>
+                            </div>
+                        </form>
+                    </main>
                 </section>
                 <section id="mapa">
                     <p><h2>Donde estamos</h2></p>
@@ -89,6 +116,8 @@
         </footer>
     </div>
     <script src="js/script.js"></script>
+    <script src="js/formulario.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>    
 </body>
 
 </html>

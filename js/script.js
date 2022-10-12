@@ -1,18 +1,19 @@
-document.getElementById("head").innerHTML = `
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+document.getElementById("head").innerHTML += `
 <!-- Iconos-->
 <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 <link rel="shortcut icon" href="img/shortcut.ico" type="image/x-icon">
+
+<!-- Multiples navegadores, por las dudas-->
+<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 
 <!-- Hojas de estilo principales-->
 <link rel="stylesheet" href="CSS/style.css">
 <link rel="stylesheet" href="CSS/navbar.css">
 <link rel="stylesheet" href="CSS/responsive.css">
+<link rel="stylesheet" href="CSS/formulario.css">
 
 <!-- Este es para hacer las pruebas de CSS -->
-<link rel="stylesheet" href="CSS/TEST.css">
+<!-- <link rel="stylesheet" href="CSS/TEST.css"> -->
 
 <title>PROYECTO HTML, CSS, JS</title>
 `

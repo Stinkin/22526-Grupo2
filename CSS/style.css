@@ -4,20 +4,20 @@
 
 :root {
 
-  --color-link: greenyellow; /* testing */
+  --color-texto: black;
+  --color-fondo: white;
+  --color-borde: black;
+
+  --color-letra-inicial: blue;
+
   --color-link-social: black;
   
   --color-menu-sombra: rgba(0, 0, 255, 0.5);
   --color-menu-fondo: black;
   --color-menu-texto: white;
   --color-menu-activo: blue;
-
-  --color-texto: black;
-  --color-fondo: white;
-  --color-borde: black;
-
-  --color-letra-inicial: blue;
   
+  --color-link: greenyellow; /* testing */
   --color-fondo-1 : grey; /*testing */
   --color-fondo-2 : pink; /*testing */
   --color-borde-1 : orange; /* testing */
@@ -29,8 +29,8 @@ html {
 }
 
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
   /* font-family: Verdana, Geneva, Tahoma, sans-serif; Posiblemente pise la letra elegida */
   font-family: 'Roboto', sans-serif;
@@ -51,13 +51,16 @@ p {
   height: auto;
 }
 
-p::first-letter {
+/* Solo para ColAncha */
+/* p::first-letter { */
+
+.colAncha > p::first-letter {
   font-size: 1.5em;
   font-weight: bold;
   color: var(--color-letra-inicial);
 }
 
-.formulario {
+.formulario2 {
   display: inline-block;
   padding: 15px;
   line-height: 30px;

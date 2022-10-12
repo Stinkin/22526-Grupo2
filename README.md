@@ -18,7 +18,7 @@ del desarrollo del proyecto.
 El TPO deberá cumplir con los siguientes requisitos:
 
 ● Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio
-Web estilo One Page, el mismo deberá tener al menos 5 secciones.
+Web estilo One Page, el mismo deberá tener al menos 5 secciones. (HECHO)
 
 ● Utilizar etiquetas semánticas para estructurar el sitio.
 
@@ -33,9 +33,9 @@ bien de Google Fonts.
 tamaños de dispositivos distintos.
 
 ● Incorporar al menos una animación, transformación o una transición (se deberá
-indicar en qué parte del sitio web fue incorporada la animación).
+indicar en qué parte del sitio web fue incorporada la animación). (HECHO)
 
-● Poseer una estructura HTML maquetada con Flexbox y/o Grid.
+● Poseer una estructura HTML maquetada con Flexbox y/o Grid.(HECHO)
 
 ● Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
 momento de entregar el TPO.
@@ -43,10 +43,10 @@ momento de entregar el TPO.
 ● En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la
 página del formulario del sitio web. No se aceptarán proyectos desarrollados
 íntegramente en algún Framework de CSS (Bootstrap, Materialize, Tailwind o
-similar).
+similar).(HECHO)
 
 ● El desarrollo web deberá subirse a un servidor on-line para poder ser navegada por
-el Docente. Ejemplo: GitHub Pages, Netlify o similares.
+el Docente. Ejemplo: GitHub Pages, Netlify o similares. (HECHO)
 
 ● Además de los aspectos técnicos mencionados anteriormente, el proyecto deberá
 contemplar aspectos de diseño los cuales también serán evaluados por el Docente.
