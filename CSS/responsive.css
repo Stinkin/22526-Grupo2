@@ -1,14 +1,5 @@
 /* Cosas de Responsive */
 
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 16px;
-  }
-  body {
-    background-color: orange; /*testing */
-  }
-}
-
 @media screen and (max-width: 1024px) {
   html {
     font-size: 16px;
@@ -18,9 +9,9 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   html {
-    font-size: 18px;
+    font-size: 12px;
   }
   body {
     background-color: lightblue; /*testing */
@@ -30,14 +21,21 @@
   .colAncha {
     flex: 100%;
   }
+  .col {
+    display: none;
+  }
   .colAncha {
     order: -1;
   }
+
+  h1 {
+    font-size: 1.7em;
+  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 200px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
   body {
     background-color: lightgreen; /*testing */
@@ -50,11 +48,13 @@
   .colAncha {
     flex: 100%;
   }
-
   .col {
-    display:none;
+    display: none;
   }
   .colAncha {
     order: -1;
+  }
+  h1 {
+    font-size: 1.5em;
   }
 }

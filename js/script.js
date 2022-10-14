@@ -20,8 +20,9 @@ document.getElementById("head").innerHTML += `
 
 document.getElementById("header").innerHTML = 
 `
-<div>
-<H1>LENGUAJES DE PROGRAMACIÓN</H1>
+<div id="screen">
+
+      <h1 id="titulo_texto">LENGUAJES DE PROGRAMACION </h1>
 </div>
 `
 

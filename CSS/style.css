@@ -1,9 +1,8 @@
 /* Estilos de identidad de la pagina se pueden usar desde cualquier tag */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Goldman&family=Roboto&display=swap');
 
 :root {
-
   --color-texto: black;
   --color-fondo: white;
   --color-borde: black;
@@ -11,29 +10,23 @@
   --color-letra-inicial: blue;
 
   --color-link-social: black;
-  
+
   --color-menu-sombra: rgba(0, 0, 255, 0.5);
   --color-menu-fondo: black;
   --color-menu-texto: white;
   --color-menu-activo: blue;
-  
+
   --color-link: greenyellow; /* testing */
-  --color-fondo-1 : grey; /*testing */
-  --color-fondo-2 : pink; /*testing */
-  --color-borde-1 : orange; /* testing */
-  --color-borde-2 : yellow; /* testing */
+  --color-fondo-1: grey; /*testing */
+  --color-fondo-2: pink; /*testing */
+  --color-borde-1: orange; /* testing */
+  --color-borde-2: yellow; /* testing */
+
 }
 
 html {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
-}
-
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; Posiblemente pise la letra elegida */
-  font-family: 'Roboto', sans-serif;
 }
 
 h1 {
@@ -47,12 +40,9 @@ p {
 }
 
 .langImg {
-  max-width: min(600px,100%);
+  max-width: min(600px, 100%);
   height: auto;
 }
-
-/* Solo para ColAncha */
-/* p::first-letter { */
 
 .colAncha > p::first-letter {
   font-size: 1.5em;
@@ -71,7 +61,6 @@ p {
   text-align: center;
 }
 
-/* Para resaltar visual, si un link esta mal, lo vamos a ver */
 a:link,
 a:visited {
   color: var(--color-link);
@@ -97,17 +86,17 @@ a.FB:active {
 
 a.WA:hover,
 a.WA:active {
-  color: lime;
+  color: limegreen;
 }
 
 a.IG:hover,
 a.IG:active {
-  color: orange;
+  color: orangered;
 }
 
 a.TT:hover,
 a.TT:active {
-  color: magenta;
+  color: cyan;
 }
 
 .social:link,
@@ -124,8 +113,6 @@ a.TT:active {
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
-
-  /* min-height: 600px; */
 }
 
 .col {
@@ -147,10 +134,10 @@ a.TT:active {
 /* Estilos para header y footer */
 .header,
 .footer {
-  background-color: var(--color-fondo-11);
-  overflow: auto;
+  /* background-color: var(--color-fondo-11); VOLVER A COLOCAR DESPUES DE TESTEAR RESPONSIVE*/
   text-align: center;
   width: 100%;
+  overflow-x: hidden; 
 }
 
 .header > div,
@@ -171,29 +158,41 @@ a.TT:active {
   padding: 0px;
   text-align: center;
   flex: 2;
-  display:block;
+  display: block;
 }
 
-.index-bottom{
+.index-bottom {
   border: 5px solid var(--color-borde-2);
   background-color: var(--color-fondo-1);
   padding: 10px;
   text-align: center;
   flex: 1;
-  display:block;
+  display: block;
 }
 
 /* La animacion */
 
 #animacion {
-  margin:0 auto;
-  height:200px;
-  width:260px; 
+  margin: 0 auto;
+  height: 200px;
+  width: 260px;
   transition: background-image 3s ease-in-out;
-  background-image:url("/img/f_ada.jpg");
+  background-image: url("/img/f_ada.jpg");
   background-size: cover;
 }
 
 #animacion:hover {
-  background-image:url("/img/f_linus.jpg");
+  background-image: url("/img/f_linus.jpg");
+}
+
+/* Estilos del titulo */
+
+#titulo_texto {
+  font-weight: 700;
+  text-align: center;
+  font-family: "Goldman", cursive;
+  padding: 0px;
+  color: white;
+  text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124),
+    0 0 2em rgb(150, 167, 124);
 }
