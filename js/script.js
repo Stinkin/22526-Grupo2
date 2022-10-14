@@ -21,11 +21,9 @@ document.getElementById("head").innerHTML += `
 document.getElementById("header").innerHTML = 
 `
 <div id="screen">
-
       <h1 id="titulo_texto">LENGUAJES DE PROGRAMACION </h1>
 </div>
 `
-
 
 document.getElementById("footer").innerHTML = `
 <div>
@@ -38,3 +36,11 @@ document.getElementById("footer").innerHTML = `
 </div>
 `
 
+const pagina = document.querySelector("main");
+console.log(pagina.id);
+
+const cols = document.querySelectorAll(".col");
+
+cols.forEach(col => {
+  col.classList.add(pagina.id);
+});
