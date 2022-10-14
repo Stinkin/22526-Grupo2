@@ -170,6 +170,12 @@ a.TT:active {
   display: block;
 }
 
+.contacto {
+  background-image: url("/img/contacto.png");
+  background-repeat: repeat;
+  background-color: white;
+}
+
 /* La animacion */
 
 #animacion {
