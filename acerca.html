@@ -1,11 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head id="head">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
+<head id="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="img/shortcut.ico" type="image/x-icon">
+
+    <!-- Multiples navegadores, por las dudas-->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <!-- Hojas de estilo principales-->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <!-- <link rel="stylesheet" href="CSS/estiloTEST.css"> -->
+
+    <title>Proyecto Codo a Codo 4.0</title>
+</head>
 
 <body>
     <div class="wrapper">
@@ -33,32 +48,29 @@
                 <a href="acerca.html"><button class="dropbtn">ACERCA DE</button></a>
             </div>
         </div>
-        <main class="main">
-            <div class="col">UNO</div>
+        <main class="main" id="acerca">
+            <div class="col"></div>
             <div class="colAncha">
                 <section id="seccion1">
-<p>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat odit facere nam, tempore assumenda maiores dolorum atque eius architecto. Quasi autem accusantium ipsam laudantium, dignissimos dolore nesciunt velit facere quaerat?
-
-</p>
-<p>
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi facilis cumque dolore commodi praesentium et, quasi ullam perferendis tempore sequi illo provident officiis, ex ea minus suscipit nostrum soluta sint!
-</p>
-<p>
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio laborum molestias velit voluptates aliquam voluptate odit dolor! Blanditiis eligendi obcaecati nisi veritatis corrupti quae, natus optio! Nesciunt molestiae tempore quaerat?
-</p>
-<p>
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti odit unde vero, debitis distinctio cumque eveniet mollitia aspernatur quidem atque doloremque quasi animi, fugiat labore veniam corporis incidunt et quo.
-</p>
+                    <div id="pokebola"></div>
+                    <div>
+                        <form action="" id="pokeForm">
+                            <label for="poky">Nro</label>
+                            <input type="number" name="poky" id="poky">
+                            <button type="submit"> Enviar</button>
+                            <button type="button" onclick="limpiarFormulario()" > Reset</button>
+                        </form>
+                    </div>
                 </section>
             </div>
-            <div class="col">UNO</div>
+            <div class="col"></div>
         </main>
 
 
         <footer id="footer" class="footer">
         </footer>
     </div>
+    <script src="js/pokemon.js"></script>
     <script src="js/script.js"></script>
 </body>
 

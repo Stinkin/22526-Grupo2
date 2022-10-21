@@ -1,23 +1,3 @@
-document.getElementById("head").innerHTML += `
-<!-- Iconos-->
-<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-<link rel="shortcut icon" href="img/shortcut.ico" type="image/x-icon">
-
-<!-- Multiples navegadores, por las dudas-->
-<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
-
-<!-- Hojas de estilo principales-->
-<link rel="stylesheet" href="CSS/style.css">
-<link rel="stylesheet" href="CSS/navbar.css">
-<link rel="stylesheet" href="CSS/responsive.css">
-<link rel="stylesheet" href="CSS/formulario.css">
-
-<!-- Este es para hacer las pruebas de CSS -->
-<!-- <link rel="stylesheet" href="CSS/TEST.css"> -->
-
-<title>PROYECTO HTML, CSS, JS</title>
-`
-
 document.getElementById("header").innerHTML = 
 `
 <div id="screen">
@@ -27,18 +7,17 @@ document.getElementById("header").innerHTML =
 
 document.getElementById("footer").innerHTML = `
 <div>
-<a class="social FB" href="http://facebook.com" target="_blank"><i class='bx bxl-facebook'></i></a>
-<a class="social WA" href="http://web.whatsapp.com" target="_blank"><i class='bx bxl-whatsapp'></i></a>
-<a class="social IG" href="http://www.instagram.com" target="_blank"><i class='bx bxl-instagram'></i></a>
-<a class="social TT" href="http://tiktok.com" target="_blank"> <i class='bx bxl-tiktok'></i></a>
+<a class="social FB" href="https://www.facebook.com/cristh.hoff/" target="_blank"><i class='bx bxl-facebook'></i></a>
+<a class="social WA" href="https://wa.me/5491163081330" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+<a class="social IG" href="https://www.instagram.com/stinkin_evil/" target="_blank"><i class='bx bxl-instagram'></i></a>
+<a class="social TT" href="https://www.tiktok.com/@stinkinevil?lang=es" target="_blank" > <i class='bx bxl-tiktok'></i></a>
+<a class="social FB" href="https://www.linkedin.com/in/cristhian-e-hoffmann-arce-91a9129/" target="_blank">  <i class='bx bxl-linkedin' ></i></a>
 <br>
 &copy; Derechos Reservados 2022 
 </div>
 `
 
 const pagina = document.querySelector("main");
-console.log(pagina.id);
-
 const cols = document.querySelectorAll(".col");
 
 cols.forEach(col => {

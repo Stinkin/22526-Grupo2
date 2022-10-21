@@ -6,7 +6,9 @@
   --color-texto: black;
   --color-fondo: white;
   --color-borde: black;
+  --color-fondo-colAncha: grey;
 
+  --color-titulo: blue;
   --color-letra-inicial: blue;
 
   --color-link-social: black;
@@ -15,12 +17,6 @@
   --color-menu-fondo: black;
   --color-menu-texto: white;
   --color-menu-activo: blue;
-
-  --color-link: greenyellow; /* testing */
-  --color-fondo-1: grey; /*testing */
-  --color-fondo-2: pink; /*testing */
-  --color-borde-1: orange; /* testing */
-  --color-borde-2: yellow; /* testing */
 
 }
 
@@ -116,16 +112,16 @@ a.TT:active {
 }
 
 .col {
-  border: 5px solid var(--color-borde-1);
-  background-color: var(--color-fondo-2);
+  border: 5px solid var(--color-borde);
+  background-color: var(--color-fondo);
   padding: 5px;
   text-align: center;
   flex: 1;
 }
 
 .colAncha {
-  border: 5px solid var(--color-borde-2);
-  background-color: var(--color-fondo-1);
+  border: 5px solid var(--color-borde);
+  background-color: var(--color-fondo-colAncha);
   padding: 10px;
   text-align: center;
   flex: 12;
@@ -153,8 +149,8 @@ a.TT:active {
 }
 
 .index-top {
-  border: 5px solid var(--color-borde-2);
-  background-color: var(--color-fondo-1);
+  border: 5px solid var(--color-borde);
+  background-color: var(--color-fondo);
   padding: 0px;
   text-align: center;
   flex: 2;
@@ -162,19 +158,61 @@ a.TT:active {
 }
 
 .index-bottom {
-  border: 5px solid var(--color-borde-2);
-  background-color: var(--color-fondo-1);
+  border: 5px solid var(--color-borde);
+  background-color: var(--color-fondo);
   padding: 10px;
   text-align: center;
   flex: 1;
   display: block;
 }
 
+
+/* Borde que se adapta, cambia el icono lateral en cada pagina */ 
+
 .contacto {
   background-image: url("/img/contacto.png");
   background-repeat: repeat;
-  background-color: white;
+  background-color: var(--color-fondo);
 }
+
+.acerca {
+  background-image: url("/img/acerca.png");
+  background-repeat: repeat;
+  background-color: var(--color-fondo);
+}
+
+.introduccion {
+  background-image: url("/img/introduccion.png");
+  background-repeat: repeat;
+  background-color: var(--color-fondo);  
+}
+
+.c {
+  background-image: url("/img/c.png");
+  background-repeat: repeat;
+  background-color: var(--color-fondo);  
+}
+.cpp {
+  background-image: url("/img/cpp.png");
+  background-repeat: repeat;
+  background-color: var(--color-fondo);  
+}
+.csharp {
+  background-image: url("/img/csharp.png");
+  background-repeat: repeat;
+  background-color: var(--color-fondo);  
+}
+.java {
+  background-image: url("/img/java.png");
+  background-repeat: repeat;
+  background-color: var(--color-fondo);  
+}
+.phyton {
+  background-image: url("/img/phyton.png");
+  background-repeat: repeat;
+  background-color: var(--color-fondo);  
+}
+
 
 /* La animacion */
 
@@ -198,7 +236,7 @@ a.TT:active {
   text-align: center;
   font-family: "Goldman", cursive;
   padding: 0px;
-  color: white;
+  color: var(--color-titulo);
   text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124),
     0 0 2em rgb(150, 167, 124);
 }
