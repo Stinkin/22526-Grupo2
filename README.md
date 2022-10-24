@@ -20,17 +20,17 @@ El TPO deberá cumplir con los siguientes requisitos:
 ● Poseer al menos 4 páginas html, siendo su temática libre. En caso de ser un Sitio
 Web estilo One Page, el mismo deberá tener al menos 5 secciones. (HECHO)
 
-● Utilizar etiquetas semánticas para estructurar el sitio.
+● Utilizar etiquetas semánticas para estructurar el sitio.(HECHO)
 
 ● Contener un formulario de contacto con validación realizada mediante Javascript.
 Opcional: el formulario podrá enviar un email utilizando algún servicio externo
-destinado para ello.
+destinado para ello. (HECHO, no se envia)
 
 ● Utilizar al menos un Iframe, íconos de FontAwesome o Flaticon; y fuentes locales o
-bien de Google Fonts.
+bien de Google Fonts.(HECHO)
 
 ● Tener al menos una página totalmente responsive con 3 puntos de corte para 3
-tamaños de dispositivos distintos.
+tamaños de dispositivos distintos. (HECHO)
 
 ● Incorporar al menos una animación, transformación o una transición (se deberá
 indicar en qué parte del sitio web fue incorporada la animación). (HECHO)
@@ -38,7 +38,7 @@ indicar en qué parte del sitio web fue incorporada la animación). (HECHO)
 ● Poseer una estructura HTML maquetada con Flexbox y/o Grid.(HECHO)
 
 ● Consumir una API Rest desde JavaScript. Deberá informar la API utilizada al
-momento de entregar el TPO.
+momento de entregar el TPO.(HECHO)
 
 ● En caso de querer utilizar Bootstrap (no es obligatorio), sólo podrá hacerlo en la
 página del formulario del sitio web. No se aceptarán proyectos desarrollados
@@ -61,7 +61,7 @@ seleccionada acorde a la temática; logo utilizado en el sitio web.
 ● Nota: el TPO es grupal, deberán sincronizar el código del TPO en Github (o similar)
 enviando el link del repositorio al Docente al momento de entregar el proyecto. Este
 requisito es obligatorio. Para más información sobre GIT, ver material incluído en el
-Aula Virtual “GIT”.
+Aula Virtual “GIT”. (HECHO)
 
 Condiciones de aprobación: para aprobar se requiere resolver el trabajo práctico en un
 60% de forma correcta.
