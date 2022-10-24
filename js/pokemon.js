@@ -34,14 +34,16 @@ function atrapalo(pokeData) {
 
 formu.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(e.target[0].value);
-  myFetch(e.target[0].value);
+  let elegido = e.target[0].value;
+  formu.reset();
+  miBola.innerHTML = "";
+  myFetch(elegido);
 });
 
 function limpiarFormulario() {
   formu.reset();
   miBola.innerHTML = "";
-  myFetch("11");
+  myFetch("132");
 }
 
-myFetch("11");
+myFetch("132");
