@@ -6,7 +6,7 @@
   --color-texto: black;
   --color-fondo: white;
   --color-borde: black;
-  --color-fondo-colAncha: grey;
+  --color-fondo-colAncha: lightgrey;
 
   --color-titulo: blue;
   --color-letra-inicial: blue;
@@ -170,64 +170,93 @@ a.TT:active {
 /* Borde que se adapta, cambia el icono lateral en cada pagina */ 
 
 .contacto {
-  background-image: url("/img/contacto.png");
+  background-image: url("../img/contacto.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);
 }
 
 .acerca {
-  background-image: url("/img/acerca.png");
+  background-image: url("../img/acerca.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);
 }
 
 .introduccion {
-  background-image: url("/img/introduccion.png");
+  background-image: url("../img/introduccion.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);  
 }
 
 .c {
-  background-image: url("/img/c.png");
+  background-image: url("../img/c.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);  
 }
 .cpp {
-  background-image: url("/img/cpp.png");
+  background-image: url("../img/cpp.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);  
 }
 .csharp {
-  background-image: url("/img/csharp.png");
+  background-image: url("../img/csharp.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);  
 }
 .java {
-  background-image: url("/img/java.png");
+  background-image: url("../img/java.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);  
 }
 .phyton {
-  background-image: url("/img/phyton.png");
+  background-image: url("../img/phyton.png");
   background-repeat: repeat;
   background-color: var(--color-fondo);  
 }
 
 
-/* La animacion */
 
-#animacion {
-  margin: 0 auto;
-  height: 200px;
-  width: 260px;
-  transition: background-image 3s ease-in-out;
-  background-image: url("/img/f_ada.jpg");
-  background-size: cover;
+
+/* SLIDER, reemplaza a la animacion */
+
+.slider-frame {
+	width: 60%;
+    height: auto;
+	margin:50px auto 0;
+	overflow: hidden;
 }
 
-#animacion:hover {
-  background-image: url("/img/f_linus.jpg");
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%; /* 100*x, X es la cantidad de imagenes a usar */ 
+	animation: slide 20s infinite alternate ease-in-out;
 }
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+}
+
+@keyframes slide {
+
+	/* aca hay que ajustar dependiendo la cantidad de imagenes */ 
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+/* SLIDER FIN */ 
 
 /* Estilos del titulo */
 

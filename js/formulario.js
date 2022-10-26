@@ -10,7 +10,7 @@ const campos = {
 const expresiones = {
   nombre: /^[a-zA-ZÀ-ÿ\s]{1,40}$/, // Letras y espacios, pueden llevar acentos.
   correo: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
-  telefono: /^\d{7,14}$/, // 7 a 14 numeros.
+  telefono: /^\d{8,12}$/, // 8 a 12 numeros.
 };
 
 const validarCampo = (expresion, input, campo) => {
@@ -74,8 +74,7 @@ inputs.forEach((input) => {
 });
 
 formulario.addEventListener("submit", (e) => {
-  // e.preventDefault();
-
+  e.preventDefault();
   const termino = document.getElementById("terminos");
   if (
     campos.nombre &&
