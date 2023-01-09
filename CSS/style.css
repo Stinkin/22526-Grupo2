@@ -17,6 +17,9 @@
   --color-menu-fondo: black;
   --color-menu-texto: white;
   --color-menu-activo: blue;
+  
+  --color-pokebola:red;
+
 
 }
 
@@ -220,7 +223,7 @@ a.TT:active {
 
 .slider-frame {
 	width: 60%;
-    height: auto;
+  height: auto;
 	margin:50px auto 0;
 	overflow: hidden;
 }
@@ -272,4 +275,13 @@ a.TT:active {
   color: var(--color-titulo);
   text-shadow: 1px 1px 2px rgb(150, 167, 124), 0 0 1em rgb(150, 167, 124),
     0 0 2em rgb(150, 167, 124);
+}
+
+#pokebola {
+  display:inline-block;
+  text-align: center;
+  width: 80%;
+  height: auto;
+  border: 5px solid var(--color-pokebola);
+  background-color: var(--color-fondo);  
 }
